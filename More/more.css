@@ -25,7 +25,6 @@ nav {
     padding: 10px 20px;
     position: sticky;
     top: 0;
-    margin-bottom: 80px;
 }
 
 nav > div:nth-of-type(1) {
@@ -41,30 +40,29 @@ a:hover {
 
 h1 {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin: 100px 0;
     letter-spacing: 2px;
 }
 
+img {
+    border-radius: 5px;
+}
+
 #skills {
-    padding-top: 20px;
-    padding-bottom: 100px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 20px 0 100px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
-.technical-skills {
-    grid-column: 2;
-}
-
 #skills>img {
     margin-left: 60px;
     width: 70%;
-    border-radius: 5px;
     grid-column: 1;
+}
+
+.technical-skills {
+    grid-column: 2;
 }
 
 .technical-skills>div {
@@ -76,18 +74,10 @@ h1 {
     line-height: 2;
 }
 
-.travel-imgs>img {
-    width:20%;
-    border-radius: 5px;
-}
-
 #travel {
     text-align: center;
     background-color: #967aa1;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 80px 50px;
 }
 
 #travel>div {
@@ -101,6 +91,10 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin: 60px;
+}
+
+.travel-imgs>img {
+    width:20%;
 }
 
 #cat {
@@ -119,18 +113,17 @@ h1 {
 
 #cat>img {
     width: 80%;
-    border-radius: 5px;
 }
 
 #more {
     background-color: #43547a;
-    padding: 200px;
+    padding: 150px;
 }
 
 #more>div {
     color: white;
     font-size: 2em;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.2em;
 }
 
 @media(max-width: 960px) {
@@ -145,7 +138,7 @@ h1 {
     .travel-imgs {
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 20px;
+        gap: 30px;
     }
 
     .travel-imgs>img {
@@ -164,8 +157,7 @@ h1 {
     }
 
     #skills>img {
-        margin-left: 0;
-        margin-bottom: 40px;
+        margin: 0 0 40px 0;
     }
 
     #travel {
@@ -203,43 +195,41 @@ h1 {
 }
 
 @media(max-width: 585px) {
-
     nav {
-        padding-bottom: 10px;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding: 10px 5px 10px 5px;
         margin-bottom: 20px;
     }
 
     nav>div {
         flex-direction: column;
-        align-items: flex-start;
         gap: 2px;
     }
 
     h1 {
-        margin-bottom: 20px;
-        margin-top: 0;
+        margin: 0 0 20px 0;
     }
 
     #skills {
         padding-bottom: 30px;
     }
     .technical-skills {
-        margin-left: 50px;
-        margin-right: 50px;
-
+        margin: 0 50px 0 50px;
     }
+    
+    .technical-skills>ul {
+        padding-left: 0;
+    }
+
     .technical-skills>div, #travel>div, #cat>div {
         font-size: 1em;
     }
 
-    #travel>div {
-        margin-bottom: 0;
+    #travel {
+        padding: 30px 30px 100px 30px;
     }
 
-    #travel {
-        padding: 20px;
+    #travel>div {
+        margin-bottom: 0;
     }
 
     .travel-imgs {

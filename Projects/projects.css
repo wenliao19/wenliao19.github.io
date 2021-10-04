@@ -40,14 +40,12 @@ a:hover {
 }
 
 .project-1, .project-2 {
-    margin-top: 40px;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 40px;
+    margin: 40px 10% 40px 10%;
+    padding: 0 20px 40px 20px;
+    line-height: 2em;
+    border-bottom: 1px solid #967aa1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border-bottom: 1px solid #967aa1;
-    line-height: 2em;
 }
 
 #box-1, #box-3 {
@@ -55,18 +53,17 @@ a:hover {
     display: flex;
     align-items: center;
     font-weight: 700;
-    padding-left: 20px;
 }
 
 #box-2, #box-4 {
     grid-column: 2 / span 2;
-    padding-right: 20px;
 }
 
-p {
+h2 {
     text-align: center;
     margin: 100px;
     font-size: 2.5em;
+    font-weight: 400;
 }
 
 @media(max-width: 960px) {
@@ -79,21 +76,19 @@ p {
         flex-direction: column;
     }
 
-    p {
+    h2 {
         font-size: 1.5em;
     }
 }
 
 @media(max-width: 585px) {
     nav {
-        padding-bottom: 10px;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding: 10px 5px 10px 5px;
+        margin-bottom: 40px;
     }
 
     nav>div {
         flex-direction: column;
-        align-items: flex-start;
         gap: 2px;
     }
 
@@ -101,8 +96,12 @@ p {
         font-size: 0.8em;
     }
 
-    p {
+    h2 {
         font-size: 1em;
         margin: 50px;
     }
+
+    ul {
+        padding-left: 0;
+    }    
 }
