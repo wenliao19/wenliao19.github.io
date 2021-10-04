@@ -12,7 +12,7 @@ a {
     transition: 0.5s;
 }
 
-nav > div:nth-of-type(1) > a:nth-of-type(1) {
+nav > div:nth-of-type(1) > a:nth-of-type(3) {
     font-weight: 700;
     color: #f7404f;
 }
@@ -36,33 +36,4 @@ nav > div:nth-of-type(1) {
 
 a:hover {
     text-decoration: underline;
-}
-
-section {
-    margin-top: 80px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-h1 {
-    font-size: 2em;
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.box-1 {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 2;
-    margin-left: 10%;
-    margin-top: 10px;
-    line-height: 2;
-}
-
-img {
-    width: 100%;
-    grid-column: 2 / span 2;
-    grid-row: 1 / span 3;
 }
