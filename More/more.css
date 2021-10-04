@@ -181,7 +181,7 @@ img {
     #cat {
         display: flex;
         flex-direction: column;
-        padding: 60px;
+        /* padding: 60px; */
     }
 
     #cat>div {
@@ -236,10 +236,10 @@ img {
         margin: 20px;
     }
 
-    #cat>img {
+    /* #cat>img {
         width: 50%;
         height: 50%;
-    }
+    } */
 
     #more {
         padding: 50px;
