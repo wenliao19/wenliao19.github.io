@@ -101,7 +101,7 @@ h1 {
 
     nav>div {
         flex-direction: column;
-        gap: 2px;
+        gap: 3px;
     }
 
     h1 {

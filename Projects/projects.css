@@ -89,7 +89,7 @@ h2 {
 
     nav>div {
         flex-direction: column;
-        gap: 2px;
+        gap: 3px;
     }
 
     .project-1, .project-2 {
