@@ -25,6 +25,7 @@ nav {
     padding: 10px 20px;
     position: sticky;
     top: 0;
+    margin-bottom: 100px;
 }
 
 nav > div:nth-of-type(1) {
@@ -36,4 +37,72 @@ nav > div:nth-of-type(1) {
 
 a:hover {
     text-decoration: underline;
+}
+
+section {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#icon-email, #icon-github, #icon-linkedin {
+    color: #192a51;
+    background-color: #d5c6e0;
+    font-size: 100px;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+#email, #github, #linkedin{
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+}
+
+section>div>p {
+    font-weight: 700;
+}
+
+section>div>a {
+    font-size: 0.8em;
+}
+
+@media(max-width: 960px) {
+    a, nav>div {
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width: 800px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 100px;
+    }
+}
+
+@media(max-width: 585px) {
+    nav {
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 0;
+    }
+
+    nav>div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+
+    section {
+        margin-top: 50px;
+    }
+
+    #icon-email, #icon-github, #icon-linkedin {
+        font-size: 60px;
+    }
 }

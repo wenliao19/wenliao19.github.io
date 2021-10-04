@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    color: #192a51;
+    background-color: #f5e6e8;
+}
+
+a {
+    color: #553463;
+    text-decoration: none;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+nav > div:nth-of-type(1) > a:nth-of-type(4) {
+    font-weight: 700;
+    color: #f7404f;
+}
+
+nav {
+    background-color: #f5e6e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 80px;
+}
+
+nav > div:nth-of-type(1) {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    letter-spacing: 2px;
+}
+
+#skills {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.technical-skills {
+    grid-column: 2;
+}
+
+#skills>img {
+    margin-left: 60px;
+    width: 70%;
+    border-radius: 5px;
+    grid-column: 1;
+}
+
+.technical-skills>div {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.technical-skills>ul {
+    line-height: 2;
+}
+
+.travel-imgs>img {
+    width:20%;
+    border-radius: 5px;
+}
+
+#travel {
+    text-align: center;
+    background-color: #967aa1;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#travel>div {
+    font-size: 1.5em;
+    color: white;
+    letter-spacing: 0.5em;
+    margin-bottom: 80px;
+}
+
+.travel-imgs {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px;
+}
+
+#cat {
+    background-color: #f0efeb;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+#cat>div {
+    font-size: 1.5em;
+    text-align: center;
+    letter-spacing: 0.5em;
+}
+
+#cat>img {
+    width: 80%;
+    border-radius: 5px;
+}
+
+#more {
+    background-color: #43547a;
+    padding: 200px;
+}
+
+#more>div {
+    color: white;
+    font-size: 2em;
+    letter-spacing: 0.5em;
+}
+
+@media(max-width: 960px) {
+    a, nav>div, .technical-skills>ul {
+        font-size: 0.8em;
+    }
+
+    h1, #more>div {
+        font-size: 1.8em;
+    }
+
+    .travel-imgs {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .travel-imgs>img {
+        width:40%;
+    }
+
+    #more {
+        padding: 100px;
+    }
+}
+
+@media(max-width: 800px) {
+    #skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #skills>img {
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+
+    #travel {
+        padding: 50px;
+    }
+
+    #travel>div {
+        letter-spacing: 0.2em;
+        margin-bottom: 50px;
+    }
+
+    .travel-imgs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .travel-imgs>img {
+        width:70%;
+    }
+
+    #cat {
+        display: flex;
+        flex-direction: column;
+        padding: 60px;
+    }
+
+    #cat>div {
+        letter-spacing: 0.2em;
+        margin-bottom: 30px;
+    }
+
+    #more>div {
+        letter-spacing: 0.2em;
+    }
+}
+
+@media(max-width: 585px) {
+
+    nav {
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+    }
+
+    nav>div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    #skills {
+        padding-bottom: 30px;
+    }
+    .technical-skills {
+        margin-left: 50px;
+        margin-right: 50px;
+
+    }
+    .technical-skills>div, #travel>div, #cat>div {
+        font-size: 1em;
+    }
+
+    #travel>div {
+        margin-bottom: 0;
+    }
+
+    #travel {
+        padding: 20px;
+    }
+
+    .travel-imgs {
+        margin: 20px;
+    }
+
+    #more {
+        padding: 50px;
+    }
+
+    #more>div {
+        font-size: 1em;
+    }
+}
