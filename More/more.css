@@ -181,12 +181,12 @@ img {
     #cat {
         display: flex;
         flex-direction: column;
-        /* padding: 60px; */
+        padding: 30px;
     }
 
     #cat>div {
         letter-spacing: 0.2em;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     #cat>img {
@@ -242,7 +242,7 @@ img {
     }
 
     #cat>img {
-        width: 100%;
+        width: 80%;
         /* height: 100%; */
     }
 
