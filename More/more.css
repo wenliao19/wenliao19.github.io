@@ -242,8 +242,8 @@ img {
     }
 
     #cat>img {
-        width: 80%;
-        /* height: 100%; */
+        width: 250px;
+        height: 250px;
     }
 
     #more {
