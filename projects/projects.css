@@ -1,42 +1,6 @@
-body {
-    margin: 0;
-    font-family: 'Noto Sans', sans-serif;
-    color: #192a51;
-    background-color: #f5e6e8;
-}
-
-a {
-    color: #553463;
-    text-decoration: none;
-    font-size: 1em;
-    transition: 0.5s;
-}
-
 nav > div:nth-of-type(1) > a:nth-of-type(2) {
     font-weight: 700;
     color: #f7404f;
-}
-
-nav {
-    background-color: #f5e6e8;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    margin-bottom: 80px;
-}
-
-nav > div:nth-of-type(1) {
-    flex: 1;
-    max-width: 40%;
-    display: flex;
-    justify-content: space-between;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 .project-1, .project-2 {
@@ -46,6 +10,10 @@ a:hover {
     border-bottom: 1px solid #967aa1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-1 {
+    margin-top: 70px;
 }
 
 #box-1, #box-3 {
@@ -67,10 +35,6 @@ h2 {
 }
 
 @media(max-width: 960px) {
-    a, nav>div {
-        font-size: 0.8em;
-    }
-
     .project-1, .project-2 {
         display: flex;
         flex-direction: column;
@@ -82,20 +46,13 @@ h2 {
 }
 
 @media(max-width: 585px) {
-    nav {
-        padding: 10px 5px 10px 5px;
-        margin-bottom: 40px;
-    }
-
-    nav>div {
-        flex-direction: column;
-        gap: 3px;
-    }
-
     .project-1, .project-2 {
         font-size: 0.8em;
     }
 
+    .project-1 {
+        margin-top: 20px;
+    }
     h2 {
         font-size: 1em;
         margin: 50px;

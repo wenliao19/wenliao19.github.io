@@ -1,42 +1,6 @@
-body {
-    margin: 0;
-    font-family: 'Noto Sans', sans-serif;
-    color: #192a51;
-    background-color: #f5e6e8;
-}
-
-a {
-    color: #553463;
-    text-decoration: none;
-    font-size: 1em;
-    transition: 0.5s;
-}
-
 nav > div:nth-of-type(1) > a:nth-of-type(3) {
     font-weight: 700;
     color: #f7404f;
-}
-
-nav {
-    background-color: #f5e6e8;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    margin-bottom: 100px;
-}
-
-nav > div:nth-of-type(1) {
-    flex: 1;
-    max-width: 40%;
-    display: flex;
-    justify-content: space-between;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 section {
@@ -53,7 +17,7 @@ section {
     border-radius: 50%;
 }
 
-#email, #github, #linkedin{
+#email, #github, #linkedin {
     text-align: center;
     justify-content: center;
 }
@@ -66,32 +30,16 @@ section>div>a {
     font-size: 0.8em;
 }
 
-@media(max-width: 960px) {
-    a, nav>div {
-        font-size: 0.8em;
-    }
-}
-
 @media(max-width: 800px) {
     section {
         display: flex;
         flex-direction: column;
         gap: 40px;
-        margin: 50px 0 100px 0;
+        margin: 40px 0 100px 0;
     }
 }
 
 @media(max-width: 585px) {
-    nav {
-        padding: 10px 5px 10px 5px;
-        margin-bottom: 0;
-    }
-
-    nav>div {
-        flex-direction: column;
-        gap: 3px;
-    }
-
     #icon-email, #icon-github, #icon-linkedin {
         font-size: 60px;
     }

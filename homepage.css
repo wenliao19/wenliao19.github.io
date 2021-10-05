@@ -1,42 +1,6 @@
-body {
-    margin: 0;
-    font-family: 'Noto Sans', sans-serif;
-    color: #192a51;
-    background-color: #f5e6e8;
-    font-size: 1em;
-}
-
-a {
-    color: #553463;
-    text-decoration: none;
-    font-size: 1em;
-    transition: 0.5s;
-}
-
 nav > div:nth-of-type(1) > a:nth-of-type(1) {
     font-weight: 700;
     color: #f7404f;
-}
-
-nav {
-    background-color: #f5e6e8;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-}
-
-nav > div:nth-of-type(1) {
-    flex: 1;
-    max-width: 40%;
-    display: flex;
-    justify-content: space-between;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 section {
@@ -73,7 +37,7 @@ h1 {
 }
 
 @media(max-width: 960px) {
-    a, nav>div, .introduction {
+    .introduction {
         font-size: 0.8em;
     }
 
@@ -95,15 +59,6 @@ h1 {
 }
 
 @media(max-width: 585px) {
-    nav {
-        padding: 10px 5px 10px 5px;
-    }
-
-    nav>div {
-        flex-direction: column;
-        gap: 3px;
-    }
-
     h1 {
         letter-spacing: 0;
         font-size: 1.5em;

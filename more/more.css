@@ -1,41 +1,6 @@
-body {
-    margin: 0;
-    font-family: 'Noto Sans', sans-serif;
-    color: #192a51;
-    background-color: #f5e6e8;
-}
-
-a {
-    color: #553463;
-    text-decoration: none;
-    font-size: 1em;
-    transition: 0.5s;
-}
-
 nav > div:nth-of-type(1) > a:nth-of-type(4) {
     font-weight: 700;
     color: #f7404f;
-}
-
-nav {
-    background-color: #f5e6e8;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-}
-
-nav>div:nth-of-type(1) {
-    flex: 1;
-    max-width: 40%;
-    display: flex;
-    justify-content: space-between;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 h1 {
@@ -117,7 +82,7 @@ img {
 
 #more {
     background-color: #43547a;
-    padding: 150px;
+    padding: 100px;
 }
 
 #more>div {
@@ -127,10 +92,6 @@ img {
 }
 
 @media(max-width: 960px) {
-    a, nav>div, .technical-skills>ul {
-        font-size: 0.8em;
-    }
-
     h1, #more>div {
         font-size: 1.8em;
     }
@@ -143,10 +104,6 @@ img {
 
     .travel-imgs>img {
         width:40%;
-    }
-
-    #more {
-        padding: 100px;
     }
 }
 
@@ -164,9 +121,9 @@ img {
         padding: 50px;
     }
 
-    #travel>div {
+    #travel>div, #cat>div {
         letter-spacing: 0.2em;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     .travel-imgs {
@@ -184,57 +141,36 @@ img {
         padding: 30px;
     }
 
-    #cat>div {
-        letter-spacing: 0.2em;
-        margin-bottom: 40px;
-    }
-
     #mycat {
         width: 300px;
         height: 300px;
     }
-
-    #more>div {
-        letter-spacing: 0.2em;
-    }
 }
 
 @media(max-width: 585px) {
-    nav {
-        padding: 10px 5px 10px 5px;
-        margin-bottom: 20px;
-    }
-
-    nav>div {
-        flex-direction: column;
-        gap: 3px;
-    }
-
     h1 {
-        margin: 0 0 20px 0;
+        margin: 10px 0 20px 0;
     }
 
     #skills {
         padding-bottom: 30px;
     }
+
     .technical-skills {
-        margin: 0 50px 0 50px;
+        margin: 20px 50px 0 50px;
     }
     
     .technical-skills>ul {
         padding-left: 0;
+        font-size: 0.8em;
     }
 
-    .technical-skills>div, #travel>div, #cat>div {
+    .technical-skills>div, #travel>div, #cat>div, #more>div {
         font-size: 1em;
     }
 
     #travel {
-        padding: 30px 30px 100px 30px;
-    }
-
-    #travel>div {
-        margin-bottom: 0;
+        padding: 30px 30px 30px 30px;
     }
 
     .travel-imgs {
@@ -248,9 +184,5 @@ img {
 
     #more {
         padding: 50px;
-    }
-
-    #more>div {
-        font-size: 1em;
     }
 }
